@@ -1,0 +1,14 @@
+
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    color: var(--color-text);
+}
+
+.num{
+    text-shadow: 3px 3px 4px gray;
+    
+}

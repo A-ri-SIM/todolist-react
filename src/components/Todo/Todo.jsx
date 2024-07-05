@@ -1,0 +1,32 @@
+import React from 'react';
+import { FaRegTrashCan } from 'react-icons/fa6';
+import styles from './Todo.module.css';
+
+export default function Todo({ todo, onUpdate, onDelete }) {
+  const { id, text, status } = todo;
+  const handleChange = (e) => {
+    const status = e.target.checked ? 'completed' : 'active';
+    onUpdate({ ...todo, status });
+  };
+  const handleDelete = () => onDelete(todo);
+  return (
+    <li className={styles.todo}>
+      <input
+        className={styles.checkbox}
+        type="checkbox"
+        id={id}
+        checked={status === 'completed'}
+        onChange={handleChange}
+      />
+      <label
+        htmlFor={id}
+        className={status === 'active' ? styles.text : styles.checktext}
+      >
+        {text}
+      </label>
+      <button onClick={handleDelete} className={styles.button}>
+        <FaRegTrashCan />
+      </button>
+    </li>
+  );
+}
