@@ -9,16 +9,20 @@
   --color-accent: #f06c00;
   --color-white: #fff;
   --color-scrollbar: #a7a7a7;
-  --color-bg-gradient:none;
-  --color-input:#fdf8ef;
+  --color-bg-gradient: none;
+  --color-input: #fdf8ef;
 }
 
 html.dark {
   --color-bg: #2a2a49;
-  --color-bg-gradient: linear-gradient(0deg,rgba(42, 42, 73, 1) 0%,rgba(8, 9, 22, 1) 99%);
-  --color-bg-container:#292d41;
+  --color-bg-gradient: linear-gradient(
+    0deg,
+    rgba(42, 42, 73, 1) 0%,
+    rgba(8, 9, 22, 1) 99%
+  );
+  --color-bg-container: #292d41;
   --color-text: #fff;
-  --color-grey: #c0c0c0;  
+  --color-grey: #c0c0c0;
 }
 
 body {
@@ -37,7 +41,6 @@ body {
   accent-color: var(--color-accent);
   background: var(--color-bg-gradient);
   background-color: var(--color-bg);
-
 }
 
 .box {
@@ -62,7 +65,7 @@ code {
 
 * {
   box-sizing: border-box;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 ul {
@@ -90,4 +93,10 @@ button {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-accent);
+}
+
+@media (max-width: 780px) {
+  .box {
+    width: 80%;
+  }
 }
