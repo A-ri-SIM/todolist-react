@@ -95,8 +95,4 @@ button {
   background-color: var(--color-accent);
 }
 
-@media (max-width: 780px) {
-  .box {
-    width: 80%;
-  }
-}
+
