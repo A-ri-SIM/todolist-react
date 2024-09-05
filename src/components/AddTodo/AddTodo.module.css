@@ -28,6 +28,9 @@
   filter: brightness(125%);
 }
 @media (min-width: 391px) {
+  .form {
+    padding: 1rem;
+  }
   .input {
     font-size: 1.4rem;
     padding: 0.7rem 1rem;
@@ -40,6 +43,9 @@
 }
 
 @media (max-width: 390px) {
+  .form {
+    padding: 0.5rem 0;
+  }
   .input {
     font-size: 1rem;
     padding: 0.5rem;
