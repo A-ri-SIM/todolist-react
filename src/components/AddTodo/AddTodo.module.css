@@ -1,33 +1,52 @@
-.form{
-    width: 100%;
-    display: flex;
-    padding: 1rem;
+.form {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
   border-top: 1px solid var(--color-grey);
   background-color: var(--color-bg-container);
 }
 
-.input{
-    flex: 1 0 auto;
-    font-size: 1.4rem;
-    padding: 0.7rem 1rem;
-    outline: none;
-    border: none;
-    background-color: var(--color-input);
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+.input {
+  flex: 1 0 auto;
+  outline: none;
+  border: none;
+  background-color: var(--color-input);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .button {
-    background-color: var(--color-accent);
-    color: var(--color-white);
-    font-weight: bold;
-    font-size: 1.4rem;
-    padding: 0 2rem;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    cursor: pointer;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  font-weight: bold;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
 }
 
-.button:hover{
-    filter: brightness(125%);
+.button:hover {
+  filter: brightness(125%);
+}
+@media (min-width: 391px) {
+  .input {
+    font-size: 1.4rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .button {
+    font-size: 1.4rem;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .input {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
 }
